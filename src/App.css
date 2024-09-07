@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+}
+
+.productItem {
+  background-color: aliceblue;
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  h4 {
+    font-size: 12px;
+  }
+  img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 8px;
+
+  a {
+    display: inline-block;
+    background-color: lightblue;
+    color: white;
+    padding: 8px 12px;
+    font-weight: normal;
+  }
+
+  .activePage {
+    font-weight: bold;
+    color: #747bff;
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
